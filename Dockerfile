@@ -40,4 +40,4 @@ RUN mkdir -p /etc/ckpool /var/log/ckpool /var/run/ckpool
 EXPOSE 3433
 
 ENTRYPOINT ["ckpool"]
-CMD ["-B", "-c", "/etc/ckpool/ckpool.conf", "-s", "/var/run/ckpool", "-l", "5"]
+CMD ["-B", "-k", "-c", "/etc/ckpool/ckpool.conf", "-s", "/var/run/ckpool", "-l", "5"]
