@@ -15,7 +15,7 @@
   "update_interval": 30,
   "version_mask": "1fffe000",
   "serverurl": [
-    "0.0.0.0:3333"
+    "0.0.0.0:3433"
   ],
   "mindiff": 0.002,
   "startdiff": 0.002,
