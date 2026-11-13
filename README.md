@@ -232,7 +232,7 @@ src/ckpool -B
 #### 4. Configure Your Miners
 
 Point mining hardware to the pool:
-- **URL**: `192.168.1.100:3333` (pool IP address, default port 3333)
+- **URL**: `192.168.1.100:3433` (pool IP address, default port 3433)
 - **Username**: Your CHTA address, optionally with a worker name (e.g., `CYourCHTAaddress.worker1`)
 - **Password**: `x, diff=200`
     - `x` - Default password (any value accepted)
@@ -295,9 +295,9 @@ All configuration options are listed below.
 **"serverurl"** : Server bindings for miner connections. **OPTIONAL**
 - Type: Array of strings
 - Values: "IP:port" or "hostname:port"
-- Default: All interfaces on port 3333
+- Default: All interfaces on port 3433
 - Note: Ports below 1024 usually require privileged access
-- Example: `"serverurl" : ["192.168.1.100:3333", "127.0.0.1:3333"]`
+- Example: `"serverurl" : ["192.168.1.100:3433", "127.0.0.1:3433"]`
 
 **"mindiff"** : Minimum difficulty for vardiff. **OPTIONAL**
 - Type: Double

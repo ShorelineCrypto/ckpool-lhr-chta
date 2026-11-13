@@ -123,7 +123,7 @@ journalctl -u ckpool -f
 1. Wait for blockchain sync (can take days for full chain)
 2. Monitor sync: `journalctl -u ckpool -f`
 3. Once synced, connect miners:
-   - URL: `stratum+tcp://<server-ip>:3333`
+   - URL: `stratum+tcp://<server-ip>:3433`
    - Username: Your Bitcoin address (optionally with `.workername`, e.g., `bc1q...abc.worker1`)
    - Password: `x`
 
@@ -161,9 +161,9 @@ rm -rf ~/.bitcoin
 > - ckpool waits for sync before starting
 
 > [!TIP]
-> **Connection refused on port 3333?**
+> **Connection refused on port 3433?**
 > - Verify ckpool is running: `systemctl status ckpool`
-> - Check firewall: `sudo ufw allow 3333/tcp`
+> - Check firewall: `sudo ufw allow 3433/tcp`
 
 > [!TIP]
 > **RPC errors?**

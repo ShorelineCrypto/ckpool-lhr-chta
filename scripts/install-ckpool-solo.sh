@@ -339,14 +339,14 @@ systemctl daemon-reload
 systemctl enable bitcoind ckpool
 systemctl start bitcoind ckpool
 
-echo "Installation complete! CKPOOL-LHR Solo is set to start on port 3333 after blockchain sync."
+echo "Installation complete! CKPOOL-LHR Solo is set to start on port 3433 after blockchain sync."
 echo "Important: You cannot mine until the Bitcoin Core blockchain is fully synchronized, which may take days."
 echo "Check sync progress with:"
 echo "  - journalctl -u ckpool -f (block progress until CKPOOL-LHR starts)"
 echo "  - journalctl -u bitcoind -f (detailed sync logs)"
 echo "  - tail -f $DATADIR/debug.log (detailed sync logs)"
 echo "CKPOOL-LHR startup is delayed until sync completes (monitor with: journalctl -u ckpool -f)."
-echo "Connect miners using: stratum+tcp://[machine IP]:3333 with your Bitcoin address as username and 'x' as password. Replace [machine IP] with the IP address of this machine (use ifconfig or ip addr to find it)."
+echo "Connect miners using: stratum+tcp://[machine IP]:3433 with your Bitcoin address as username and 'x' as password. Replace [machine IP] with the IP address of this machine (use ifconfig or ip addr to find it)."
 echo "Monitor logs:"
 echo "  - CKPOOL-LHR: tail -f /var/log/ckpool/ckpool.log (full logs) or journalctl -u ckpool -f (block progress, then reduced CKPOOL-LHR logs)"
 echo "  - Bitcoin Core: tail -f $DATADIR/debug.log or journalctl -u bitcoind -f"
