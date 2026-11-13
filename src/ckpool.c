@@ -1806,7 +1806,7 @@ int main(int argc, char **argv)
 	}
 	/* Replace with a valid CHTA mainnet address if donation > 0 is configured */
 	if (!ckp.donaddress)
-		ckp.donaddress = "CVXL3EHkrH8xWsv4ECtwWxJqzHQG9KujNq";
+		ckp.donaddress = "CawE7rM48yRFuNERYvMWJLf1tWdH2daY9Q";
 	if (ckp.donation < 0.1)
 		ckp.donation = 0;
 	else if (ckp.donation > 99.9)
