@@ -1,0 +1,25 @@
+{
+  "btcd": [
+    {
+      "url": "172.17.0.1:8536",
+      "auth": "RPCUserName",
+      "pass": "YourRPCPassword",
+      "notify": true
+    }
+  ],
+  "btcaddress": "YourCheetahcoinAddress",
+  "btcsig": "/ckpool-cheetahdex/",
+  "blockpoll": 100,
+  "nonce1length": 4,
+  "nonce2length": 8,
+  "update_interval": 30,
+  "version_mask": "1fffe000",
+  "serverurl": [
+    "0.0.0.0:3433"
+  ],
+  "mindiff": 0.002,
+  "startdiff": 0.002,
+  "maxdiff": 0,
+  "zmqblock": "tcp://172.17.0.1:28332",
+  "logdir": "/var/log/ckpool"
+}
