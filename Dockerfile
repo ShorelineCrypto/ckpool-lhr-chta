@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /build
-RUN git clone https://github.com/ShorelineCrypto/ckpool-lhr-chta.git  .
+RUN git clone -b cheetah https://github.com/ShorelineCrypto/ckpool-lhr-chta.git  .
 
 # Optional: disable architecture-specific assembly optimizations if cross-compiling or facing CPU flag issues
 # RUN sed -i "s/host_cpu = 'x86_64'/host_cpu = 'x86_64-disabled'/" configure.ac && \
