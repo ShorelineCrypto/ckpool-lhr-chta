@@ -8,7 +8,7 @@
     }
   ],
   "btcaddress": "YourCheetahcoinAddress",
-  "btcsig": "/ckpool-cheetahdex/",
+  "btcsig": "/Cheetahdex-for-miners/",
   "blockpoll": 100,
   "nonce1length": 4,
   "nonce2length": 8,
